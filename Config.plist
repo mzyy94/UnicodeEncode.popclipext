@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Image File</key>
+			<string>\u.png</string>
+			<key>Script Interpreter</key>
+			<string>/bin/bash</string>
+			<key>Shell Script File</key>
+			<string>unicodeencode.sh</string>
+			<key>Title</key>
+			<string>Unicode Encode</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<dict>
+			<key>Link</key>
+			<string>http://mzyy94.com</string>
+			<key>Name</key>
+			<string>Yuki Mizuno</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Unicode-encode the selected text.</string>
+	<key>Extension Identifier</key>
+	<string>com.mzyy94.popclip.extension.unicodeencode</string>
+	<key>Extension Name</key>
+	<string>Unicode Encode</string>
+	<key>Required Apps</key>
+	<integer>701</integer>
+</dict>
+</plist>
