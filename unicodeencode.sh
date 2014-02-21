@@ -2,6 +2,8 @@
 
 #support UTF-8 characters
 export LANG="en_US.UTF-8"
+
+#convert UTF-8-MAC to UTF-8
 string=$(iconv -f UTF-8-MAC -t UTF-8 <<< $POPCLIP_TEXT)
 
 for ((i = 0; i < ${#string}; i++)) {
