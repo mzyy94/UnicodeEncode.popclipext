@@ -2,10 +2,11 @@
 
 #support UTF-8 characters
 export LANG="en_US.UTF-8"
+string=$(iconv -f UTF-8-MAC -t UTF-8 <<< $POPCLIP_TEXT)
 
-for ((i = 0; i < ${#POPCLIP_TEXT}; i++)) {
+for ((i = 0; i < ${#string}; i++)) {
 
-    char=${POPCLIP_TEXT:$i:1}
+    char=${string:$i:1}
 
     utf8_raw="0x$(xxd -ps <<< $char)"
     digit_raw=$(printf "%d" $utf8_raw)
